@@ -1,0 +1,9 @@
+<div class="card col col-12 mb-5">
+  <img [src]="image" alt="Imagen del post" class="card-img-top">
+  <article class="card-body">
+    <h2 class="card-title">{{ title }}</h2>
+    <p class="card-text">{{ content }}</p>
+    <p class="card-text">{{ date | date: 'd MMM, yyyy' }}</p>
+    <a href="#" class="btn btn-primary">Más detalles</a>
+  </article>
+</div>

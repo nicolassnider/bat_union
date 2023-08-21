@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+.h1-responsive {
+  font-size: 2rem; /* Tamaño base en pantallas grandes */
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas */
+  .h1-responsive {
+    font-size: 1.5rem; /* Reducción del tamaño en pantallas pequeñas */
+  }
+}
