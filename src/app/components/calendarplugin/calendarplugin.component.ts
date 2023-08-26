@@ -13,14 +13,11 @@ export class CalendarPluginComponent {
   calendarOptions: CalendarOptions = {
     initialView: 'dayGridMonth',
     plugins: [dayGridPlugin,bootstrap5Plugin],
-    events: events
+    events: events,
+    eventClick: ()=>{console.log('hola')},
   };
-  eventClick = function(info) {
-    alert('Event: ' + info.event.title);
-    alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
-    alert('View: ' + info.view.type);
 
-    // change the border color just for fun
-    info.el.style.borderColor = 'red';
+  eventClick() {
+
   }
 }
