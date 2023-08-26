@@ -3,10 +3,10 @@ import {postsData} from '../../../assets/data/posts';
 
 @Component({
   selector: 'app-activities',
-  templateUrl: './activities.component.html',
-  styleUrls: ['./activities.component.css']
+  templateUrl: './blog.component.html',
+  styleUrls: ['./blog.component.css']
 })
-export class ActivitiesComponent {
+export class BlogComponent {
   posts = postsData
 
   constructor() { }

@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  contactNumber: '',
+  contactNumber: '1123992321',
   // ... otras propiedades
 };
