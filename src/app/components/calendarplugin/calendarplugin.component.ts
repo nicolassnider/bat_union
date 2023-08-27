@@ -7,17 +7,19 @@ import { events } from '../../../assets/data/events'; // Importa el array de eve
 @Component({
   selector: 'app-calendarplugin',
   templateUrl: './calendarplugin.component.html',
-  styleUrls: ['./calendarplugin.component.css']
+  styleUrls: ['./calendarplugin.component.css'],
 })
 export class CalendarPluginComponent {
+  selectedEvent: any; // Store selected event
+
   calendarOptions: CalendarOptions = {
     initialView: 'dayGridMonth',
-    plugins: [dayGridPlugin,bootstrap5Plugin],
+    plugins: [dayGridPlugin, bootstrap5Plugin],
     events: events,
-    eventClick: ()=>{console.log('hola')},
+    eventMouseEnter: (info) => {
+      this.selectedEvent = info.event;
+      console.log(this.selectedEvent)
+    }
   };
 
-  eventClick() {
-
-  }
 }

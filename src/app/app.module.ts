@@ -14,6 +14,8 @@ import { DocumentsComponent } from './pages/documents/documents.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { CalendarPluginComponent } from './components/calendarplugin/calendarplugin.component';
 import { Interaction } from '@fullcalendar/core/internal';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { Interaction } from '@fullcalendar/core/internal';
     BrowserModule,
     AppRoutingModule,
     FullCalendarModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
