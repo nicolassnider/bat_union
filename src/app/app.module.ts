@@ -13,6 +13,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { DocumentsComponent } from './pages/documents/documents.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { CalendarPluginComponent } from './components/calendarplugin/calendarplugin.component';
+import { HttpClientModule } from '@angular/common/http';
 import { Interaction } from '@fullcalendar/core/internal';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
@@ -33,7 +34,8 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FullCalendarModule
+    FullCalendarModule,
+    HttpClientModule,
 
   ],
   providers: [],

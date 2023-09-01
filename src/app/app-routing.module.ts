@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { DocumentsComponent } from './pages/documents/documents.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'calendar', component: CalendarComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'documents', component: DocumentsComponent },
   // Agrega más rutas aquí según tus componentes
   //paginas de error
   { path: '**', redirectTo: '', pathMatch: 'full' },
